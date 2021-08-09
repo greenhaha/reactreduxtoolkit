@@ -10,11 +10,11 @@ export const counterSlice = createSlice({
  reducers: {
     increment(state, { payload }) {
         // console.log(action);
-        state.count = state.count ++; // 内置了immutable
+        state.count = state.count + payload.step; // 内置了immutable
     },
     decrement(state) {
         state.count -= 1;
-    },
+        },
   },
 });
 
